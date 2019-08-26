@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="/savedata" method="POST">
+        <table class="table">
+            <tr><td>Name:</td><td><input type="text" name="ename" id=""></td></tr>
+            <tr><td>Email:</td><td><input type="email" name="eemail" id=""></td></tr>
+            <tr><td>Message:</td><td><textarea name="emsg" id="" cols="30" rows="3"></textarea></td></tr>
+            <tr><td>Mobile:</td><td><input type="text" name="emob" id=""></td></tr>
+            <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+        </table>
+    </form>
+
+    <a href="/viewall">Viewall</a>
+    
+    <form action="/searchmob" method="POST">
+        <table>
+            <tr><td>Mobile:</td><td><input type="text" name="emob" id=""></td></tr>
+            <tr><td></td><td><input type="submit" value="Search"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
